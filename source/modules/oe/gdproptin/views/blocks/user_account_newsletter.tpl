@@ -19,7 +19,10 @@
                     <div class="inlineError">[{$oError->getOxMessage()}]</div>
             [{/if}]
     [{else}]
-        <div class="col-lg-12">
+        <div class="col-lg-12" style="
+             border: 2px solid green;
+            padding: 10px;
+        ">
             <div class="checkbox">
                 <label for="oegdproptin_userregistration">
                     <input type="checkbox" name="oegdproptin_userregistration" id="oegdproptin_userregistration" value="1"> [{oxmultilang ident="OEGDPROPTIN_USER_REGISTRATION_OPTIN"}]
