@@ -1,6 +1,6 @@
 [{include file="page/info/contact.tpl" assign="pageContent"}]
 
-[{if $oViewConf->getActiveTheme()=='azure'}]
+[{if $oViewConf->getActiveTheme()=='hamburg'}]
     [{capture name="optIn" assign="optIn"}]
         [{if $oView->isOptInValidationRequired()}]
             </li>

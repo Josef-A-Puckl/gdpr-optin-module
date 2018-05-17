@@ -5,7 +5,7 @@
 [{/if}]
 
 [{if true == $oConfig->getConfigParam('blOeGdprOptinDeliveryAddress')}]
-  [{if $oViewConf->getActiveTheme()=='azure'}]
+  [{if $oViewConf->getActiveTheme()=='hamburg'}]
     <p id="GdprOptinShipAddress" style="[{if $delivadr || !$oView->showShipAddress()}]display: none;[{/if}]">
       <input type="hidden" class="hidden" id="oegdproptin_changeDelAddress" name="oegdproptin_changeDelAddress" value="0">
       <input type="checkbox" name="oegdproptin_deliveryaddress" id="oegdproptin_deliveryaddress" value="1">

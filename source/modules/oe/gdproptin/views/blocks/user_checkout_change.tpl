@@ -9,7 +9,7 @@
 [{/if}]
 
 [{if true == $oConfig->getConfigParam('blOeGdprOptinDeliveryAddress')}]
-    [{if $oViewConf->getActiveTheme()=='azure'}]
+    [{if $oViewConf->getActiveTheme()=='hamburg'}]
         [{if $delivadr}]
             [{oxscript add="$('#showShipAddress').change( function() { $('#GdprOptinShipAddress, #shippingAddressForm').hide($(this).is(':checked'));});"}]
             [{oxscript add="$('#addressId').change(function() { $('#GdprOptinShipAddress').toggle($('#addressId').val() == -1 ); }); "}]

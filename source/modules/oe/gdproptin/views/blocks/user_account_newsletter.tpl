@@ -5,7 +5,7 @@
 [{/if}]
 
 [{if true == $oConfig->getConfigParam('blOeGdprOptinUserRegistration')}]
-    [{if $oViewConf->getActiveTheme()=='azure'}]
+    [{if $oViewConf->getActiveTheme()=='hamburg'}]
         </li>
         <li>
             <label for="oegdproptin_userregistration" style="width:100%;">

@@ -5,7 +5,7 @@
 [{/if}]
 
 [{if true == $oConfig->getConfigParam('blOeGdprOptinInvoiceAddress')}]
-    [{if $oViewConf->getActiveTheme()=='azure'}]
+    [{if $oViewConf->getActiveTheme()=='hamburg'}]
         <p id="GdprInvoiceAddressOptin" style="display: none;">
             <input type="hidden" class="hidden" id="oegdproptin_changeInvAddress" name="oegdproptin_changeInvAddress" value="0">
             <input type="checkbox" name="oegdproptin_invoiceaddress" id="oegdproptin_invoiceaddress" value="1">

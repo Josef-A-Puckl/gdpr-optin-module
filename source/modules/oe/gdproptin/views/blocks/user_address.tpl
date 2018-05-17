@@ -7,7 +7,7 @@
 [{/if}]
 
 [{if true == $oConfig->getConfigParam('blOeGdprOptinDeliveryAddress')}]
-    [{if $oViewConf->getActiveTheme()=='azure'}]
+    [{if $oViewConf->getActiveTheme()=='hamburg'}]
         [{if $delivadr}]
             [{oxscript add="$('#showShipAddress').change( function() { $('#GdprShippingAddressOptin, #shippingAddressForm').hide($(this).is(':checked'));});"}]
             [{oxscript add="$('#addressId').change(function() { $('#GdprShippingAddressOptin').toggle($('#addressId').val() == -1 ); }); "}]
@@ -27,7 +27,7 @@
 [{/if}]
 
 [{if true == $oConfig->getConfigParam('blOeGdprOptinInvoiceAddress')}]
-    [{if $oViewConf->getActiveTheme()=='azure'}]
+    [{if $oViewConf->getActiveTheme()=='hamburg'}]
         [{oxscript add="$('#userChangeAddress').click( function() { $('#GdprInvoiceAddressOptin').show();return false;});"}]
     [{else}]
         [{oxscript add="$('#userChangeAddress').click( function() { $('#GdprInvoiceAddressOptin').show();$('#userChangeAddress').hide();return false;});"}]
